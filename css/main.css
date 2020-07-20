@@ -19,6 +19,33 @@ body {
   --menu-speed: 600ms;
 }
 
+/*styling the scrollbar*/
+
+#nav-bar::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+#nav-bar::-webkit-scrollbar-track {
+  background: #b0afac;
+}
+
+#nav-bar::-webkit-scrollbar-thumb {
+  background: #cf8a00;
+}
+
+body::-webkit-scrollbar {
+  width: 0.85rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #e3e2de;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #01291c;
+}
+
+
 /*******************STYLING NAV BAR*******************/
 
 #nav-bar {
@@ -31,6 +58,8 @@ body {
   overflow-x: hidden;
   border-bottom: 3px var(--secondary-color) solid;
   background-color: rgb(224, 255, 246);
+  transition: width 200ms ease;
+
 }
 
 #nav-bar header a:first-child {
@@ -175,6 +204,7 @@ footer > p:hover > i {
     width: 220px;
     overflow-y: auto;
     z-index: 1;
+
   }
 
   #nav-bar header {
@@ -228,7 +258,7 @@ footer > p:hover > i {
     position: absolute;
     top: 0;
     left: 200px;
-    margin: 0 20px; 
+    margin: 0 20px;
     text-align: justify;
   }
 
